@@ -1,0 +1,30 @@
+{% extends 'design.html' %}
+{% block userblock %}
+{% load staticfiles %}
+
+<h1><span style="color: #ffffff;">How to stop a DDoS attack :</span></h1>
+<h3><span style="color: #ffffff;">1.Identify the DDoS attack early</span></h3>
+<p><span style="color: #ffffff;">If you run your own servers, then you need to be able to identify when you are under attack. That's because the sooner you can establish that problems with your website are due to a DDoS attack, the sooner you can stop the DDoS attack.</span></p>
+<p><span style="color: #ffffff;">To be in a position to do this, it's a good idea to familiarize yourself with your typical inbound traffic profile; the more you know about what your normal traffic looks like, the easier it is to spot when its profile changes. Most DDoS attacks start as sharp spikes in traffic, and it's helpful to be able to tell the difference between a sudden surge of legitimate visitors and the start of a DDoS attack.</span></p>
+<h3><span style="color: #ffffff;">2.Overprovision bandwidth</span></h3>
+<p><span style="color: #ffffff;">It generally makes sense to have more bandwidth available to your Web server than you ever think you are likely to need. That way, you can accommodate sudden and unexpected surges in traffic that could be a result of an advertising campaign, a special offer or even a mention of your company in the media.</span></p>
+<p><span style="color: #ffffff;">Even if you overprovision by 100 percent -- or 500 percent -- that likely won't stop a DDoS attack. But it may give you a few extra minutes to act before your resources are overwhelmed completely.</span></p>
+<h3><span style="color: #ffffff;">3.Defend at the network perimeter (if you run your own web server)</span></h3>
+<p><span style="color: #ffffff;">There are a few technical measures that can be taken to partially mitigate the effect of an attack -- especially in the first minutes -- and some of these are quite simple. For example, you can:</span></p>
+<ul>
+<li><span style="color: #ffffff;">rate limit your router to prevent your Web server from being overwhelmed</span></li>
+<li><span style="color: #ffffff;">add filters to tell your router to drop packets from obvious sources of attack</span></li>
+<li><span style="color: #ffffff;">timeout half-open connections more aggressively</span></li>
+<li><span style="color: #ffffff;">drop spoofed or malformed packages</span></li>
+<li><span style="color: #ffffff;">set lower SYN, ICMP, and UDP flood drop thresholds</span></li>
+</ul>
+<p><span style="color: #ffffff;">4.Call your ISP or hosting provider</span></p>
+<p><span style="color: #ffffff;">The next step is to call your ISP (or hosting provider if you do not host your own Web server), tell them you are under attack, and ask for help. Keep emergency contacts for your ISP or hosting provider readily available so you can do this quickly. Depending on the strength of the attack, the ISP or hoster may already have detected it &ndash; or they may themselves start to be overwhelmed by the attack.</span></p>
+<h3><span style="color: #ffffff;">5.Call a DDoS mitigation specialist</span></h3>
+<p><span style="color: #ffffff;">For very large attacks, it's likely that your best chance of staying online is to use a specialist DDoS mitigation company. These organizations have large-scale infrastructure and use a variety of technologies, including data scrubbing, to help keep your website online. You may need to contact a DDoS mitigation company directly, or your hosting company or service provider may have a partnership agreement with one to handle large attacks.</span></p>
+<h3><span style="color: #ffffff;">6.Create a DDoS playbook</span></h3>
+<p><span style="color: #ffffff;">The best way to ensure that your organization reacts as quickly and effectively as possible to stop a DDoS attack is to create a playbook that documents in detail every step of a pre-planned response when an attack is detected.</span></p>
+<p><span style="color: #ffffff;">This should include the actions detailed above, with contact names and telephone numbers of all those who may need to be brought into action as part of the playbook's plan. DDoS mitigation companies can help with this by running a simulated DDoS attack, enabling you to develop and refine a rapid corporate procedure for reacting to a real attack.</span></p>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+
+{% endblock %}
